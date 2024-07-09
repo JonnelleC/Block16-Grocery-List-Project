@@ -107,7 +107,7 @@ function calculateTotalCartPrice() {
   console.log(cart);
   for (let i = 0; i < cart.length; i++) {
     const item = findItemById(Number(cart[i]));
-    total = total + item.price;
+    total += item.price;
   }
   return total;
 }
